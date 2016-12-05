@@ -1,10 +1,10 @@
 ## Alpine microcontainer with apache and php7
 
-This is a micro docker container [![](https://badge.imagelayers.io/nimmis/alpine-apache-php7:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-apache-php7:latest) based on Alpine 3.4 and Apache 2.2 and php 7
+This is a micro docker container *(forked from nimmis/alpine-apache-php7)* [!](https://badge.imagelayers.io/nimmis/alpine-apache-php7:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-apache-php7:latest) based on Alpine 3.4 and Apache 2.2 and php 7
 
 ### Examples
 
-This images are build on nimmis/alpine-micro which are a modified version of Alpine with a working 
+This images are build on nimmis/alpine-micro which are a modified version of Alpine with a working
 init process, and a working cron, logrotate  and syslog. Services are started with
 runit daemon, for more information about that see [nimmis/alpine-mico](https://registry.hub.docker.com/u/nimmis/alpine-micro/)
 
@@ -43,4 +43,3 @@ To access the webserver from external you use the -P command where the syntax is
 so to access the apache server on port 8080 you should use the command
 
 	docker run -d --name apache-php7 -p 8080:80  nimmis/alpine-apache-php7
-
