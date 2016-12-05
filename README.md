@@ -4,8 +4,8 @@ This is a micro docker container *(forked from nimmis/alpine-apache-php7)* based
 
 ### Examples
 
-This images are build on nimmis/alpine-micro which are a modified version of Alpine with a working
-init process, and a working cron, logrotate  and syslog. Services are started with
+This image is built on nimmis/alpine-micro which is a modified version of Alpine with a working
+init process, a working cron, logrotate and syslog. Services are started with
 runit daemon, for more information about that see [nimmis/alpine-mico](https://registry.hub.docker.com/u/nimmis/alpine-micro/)
 
 
@@ -19,7 +19,7 @@ This will start the container with apache process runnung, access the container 
 
 #### Static web folder
 
-The images exposes a volume at /web. The structure below /web is
+The image exposes a volume at /web. The structure below /web is
 
 | Directory | Function |
 | --------- | -------- |
