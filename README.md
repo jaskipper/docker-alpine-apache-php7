@@ -1,6 +1,6 @@
 ## Alpine microcontainer with apache and php7
 
-This is a micro docker container *(forked from nimmis/alpine-apache-php7)* [!](https://badge.imagelayers.io/nimmis/alpine-apache-php7:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-apache-php7:latest) based on Alpine 3.4 and Apache 2.2 and php 7
+This is a micro docker container *(forked from nimmis/alpine-apache-php7)* based on Alpine 3.4 and Apache 2.2 and php 7
 
 ### Examples
 
@@ -11,7 +11,7 @@ runit daemon, for more information about that see [nimmis/alpine-mico](https://r
 
 #### starting the container as a daemon
 
-	docker run -d --name apache-php7 nimmis/alpine-apache-php7
+	docker run -d --name apache-php7 jaskipper/alpine-apache-php7
 
 This will start the container with apache process runnung, access the container with
 
@@ -30,7 +30,7 @@ The images exposes a volume at /web. The structure below /web is
 
 To use this start the container with
 
-	docker run -d --name apache-php7 -v /path/to/web:/web nimmis/alpine-apache-php7
+	docker run -d --name apache-php7 -v /path/to/web:/web jaskipper/alpine-apache-php7
 
 if the folders are missing they will be created
 
@@ -42,4 +42,4 @@ To access the webserver from external you use the -P command where the syntax is
 
 so to access the apache server on port 8080 you should use the command
 
-	docker run -d --name apache-php7 -p 8080:80  nimmis/alpine-apache-php7
+	docker run -d --name apache-php7 -p 8080:80  jaskipper/alpine-apache-php7
